@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{A39C23D2-F2C0-258D-165A-CF1E7FEE6E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azure-openai-keyless-csharp", "demo\azure-openai-keyless-csharp\azure-openai-keyless-csharp.csproj", "{544EE135-D130-25E2-DC77-39BF0469D043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{B1A2C3D4-E5F6-7890-ABCD-EF1234567890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-Migration", "tools\Test-Migration\Test-Migration.csproj", "{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{544EE135-D130-25E2-DC77-39BF0469D043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544EE135-D130-25E2-DC77-39BF0469D043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544EE135-D130-25E2-DC77-39BF0469D043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544EE135-D130-25E2-DC77-39BF0469D043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{544EE135-D130-25E2-DC77-39BF0469D043} = {A39C23D2-F2C0-258D-165A-CF1E7FEE6E7B}
+		{D4E5F6A7-B8C9-0123-4567-89ABCDEF0123} = {B1A2C3D4-E5F6-7890-ABCD-EF1234567890}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFB04CC6-8E5F-4295-9A02-7D1861690720}
+	EndGlobalSection
+EndGlobal

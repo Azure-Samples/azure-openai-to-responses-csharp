@@ -1,0 +1,32 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+*.cache
+*.log
+*.vs/
+.vscode/
+*.nupkg
+project.lock.json
+TestResults/
+
+## IDE
+.idea/
+*.swp
+*~
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Migration working directories
+bulk-migrations/
+migrations/
+
+## Environment
+.env
+*.env.local
