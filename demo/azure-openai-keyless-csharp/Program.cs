@@ -26,7 +26,7 @@ Environment.SetEnvironmentVariable(DefaultAzureCredential.DefaultEnvironmentVari
 // Build a BearerTokenPolicy for keyless (Entra ID) authentication.
 // This replaces the AzureOpenAIClient + DefaultAzureCredential pattern.
 var policy = new BearerTokenPolicy(
-    new DefaultAzureCredential(DefaultAzureCredential.DefaultEnvironmentVariableName),
+    new DefaultAzureCredential(),
     "https://ai.azure.com/.default");
 
 // Configure the client to use the Azure OpenAI /openai/v1/ endpoint.
