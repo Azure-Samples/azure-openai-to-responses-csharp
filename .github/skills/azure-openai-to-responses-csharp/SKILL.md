@@ -87,7 +87,7 @@ var chatClient = client.GetChatClient(deploymentName);
 // AFTER
 var policy = new BearerTokenPolicy(
     new DefaultAzureCredential(),
-    "https://cognitiveservices.azure.com/.default");
+    "https://ai.azure.com/.default");
 var clientOptions = new OpenAIClientOptions
 {
     Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")

@@ -49,7 +49,7 @@ Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")
 // Ensure correct scope
 var policy = new BearerTokenPolicy(
     new DefaultAzureCredential(),
-    "https://cognitiveservices.azure.com/.default");  // Must be exactly this
+    "https://ai.azure.com/.default");  // Must be exactly this
 ```
 
 Check role assignment:

@@ -73,7 +73,7 @@ using OpenAI.Responses;
 
 var policy = new BearerTokenPolicy(
     new DefaultAzureCredential(),
-    "https://cognitiveservices.azure.com/.default");
+    "https://ai.azure.com/.default");
 var clientOptions = new OpenAIClientOptions
 {
     Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")
@@ -326,7 +326,7 @@ var credential = clientId != null
 
 var policy = new BearerTokenPolicy(
     credential,
-    "https://cognitiveservices.azure.com/.default");
+    "https://ai.azure.com/.default");
 var clientOptions = new OpenAIClientOptions
 {
     Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")
@@ -351,7 +351,7 @@ var credential = new ChainedTokenCredential(
 
 var policy = new BearerTokenPolicy(
     credential,
-    "https://cognitiveservices.azure.com/.default");
+    "https://ai.azure.com/.default");
 var clientOptions = new OpenAIClientOptions
 {
     Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")
@@ -495,7 +495,7 @@ builder.Services.AddSingleton(sp =>
     var endpoint = builder.Configuration["AzureOpenAI:Endpoint"]!;
     var policy = new BearerTokenPolicy(
         new DefaultAzureCredential(),
-        "https://cognitiveservices.azure.com/.default");
+        "https://ai.azure.com/.default");
     var clientOptions = new OpenAIClientOptions
     {
         Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/")
