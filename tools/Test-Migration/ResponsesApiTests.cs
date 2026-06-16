@@ -70,7 +70,7 @@ public class ResponsesClientFixture
             {
                 var credential = new Azure.Identity.DefaultAzureCredential();
                 var policy = new BearerTokenPolicy(
-                    credential, "https://cognitiveservices.azure.com/.default");
+                    credential, "https://ai.azure.com/.default");
                 Client = new ResponsesClient(policy, options);
             }
             catch (Exception ex)

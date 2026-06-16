@@ -54,7 +54,7 @@ Console.WriteLine(response.Content[0].Text);
 
 // AFTER — Responses API
 var policy = new BearerTokenPolicy(
-    new DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default");
+    new DefaultAzureCredential(), "https://ai.azure.com/.default");
 var options = new OpenAIClientOptions { Endpoint = new Uri($"{endpoint.TrimEnd('/')}/openai/v1/") };
 var responsesClient = new ResponsesClient(policy, options);
 var response = await responsesClient.CreateResponseAsync("gpt-5-mini", "Hello!");
